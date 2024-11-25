@@ -6,15 +6,13 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "nomad-measurements"
+name = "nomad-onboarding-workshop"
 dynamic = ["version"]
-description = "A plugin for NOMAD containing base sections for material processing."
+description = "NOMAD Onboarding Workshop Materials."
 readme = "README.md"
 authors = [
-    { name = "Hampus Näsström", email = 'hampus.naesstroem@physik.hu-berlin.de' },
-    { name = "Andrea Albino", email = 'andrea.albino@physik.hu-berlin.de' },
-    { name = "Sebastian Brückner", email = 'sebastian.brueckner@ikz-berlin.de' },
-    { name = "Sarthak Kapoor", email = 'sarthak.kapoor@physik.hu-berlin.de' },
+    { name = "Siamak Nakhaie", email = 'siamak.nakhaie@physik.hu-berlin.de' },
+    { name = "Ahmed Mansour", email = 'ahmed.mansour@physik.hu-berlin.de' }
 ]
 requires-python = ">=3.9"
 classifiers = [
@@ -37,8 +35,7 @@ dev = [
 file = "LICENSE"
 
 [project.urls]
-"Homepage" = "https://github.com/FAIRmat-NFDI/nomad-measurements"
-"Bug Tracker" = "https://github.com/FAIRmat-NFDI/nomad-measurements/issues"
+"Homepage" = "https://github.com/FAIRmat-NFDI/nomad-onboarding-workshop"
 
 [tool.setuptools.packages.find]
 where = [
