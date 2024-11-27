@@ -1,8 +1,8 @@
 site_name: NOMAD Onboarding Workshop
 site_description: |
-  Temporary repo to produce the NOMAD onboarding workshop materials.
-site_author: The FAIRmat Area F
-repo_url: https://github.com/siamakn/temp-nomad-onboarding-workshop
+  NOMAD onboarding workshop materials
+site_author: FAIRmat Area F
+repo_url: https://fairmat-nfdi.github.io/nomad-onboarding-workshop/
 edit_uri: ""
 
 nav:
