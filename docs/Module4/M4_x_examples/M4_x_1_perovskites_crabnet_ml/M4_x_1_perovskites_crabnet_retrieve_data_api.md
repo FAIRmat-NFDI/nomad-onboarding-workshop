@@ -117,22 +117,19 @@ while True:
 
     if 'next_page_after_value' not in data['pagination'].keys():
         for entry in data['data']:
-            if 'results' not in entry.keys():
-                continue
-            elif 'chemical_formula_reduced' not in entry['results']['material'].keys():
-                continue
-            else:
+            try:
                 extract_values(entry)
+            except KeyError:
+                continue
         break
+
     page_after_value = data['pagination']['next_page_after_value']
 
     for entry in data['data']:
-        if 'results' not in entry.keys():
-            continue
-        elif 'chemical_formula_reduced' not in entry['results']['material'].keys():
-            continue
-        else:
+        try:
             extract_values(entry)
+        except KeyError:
+            continue
 ```
 
 You can verify that the data was fetched correctly by printing some of the values:

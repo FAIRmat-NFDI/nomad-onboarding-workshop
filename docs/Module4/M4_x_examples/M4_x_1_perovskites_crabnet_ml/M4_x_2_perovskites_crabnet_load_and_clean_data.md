@@ -44,9 +44,7 @@ The dataset might include missing values, let's check if there are any:
 ```python
 df.isna().sum()
 ```
-Let's now keep part of the dataframe, where the value for bandgap is not `Na`.
-
-and remove them:
+Let's now keep only the part of the dataframe, where the value for bandgap is not `Na`.
 
 ```python
 df = df[df['bandgap'].notna()]
@@ -66,7 +64,7 @@ Let's rename columns and use the **gourpby_formula** function from CrabNet:
 ```python
 from crabnet.utils.data import groupby_formula
 
-# Rename the column 'bandgap' to 'target'
+# Rename the column 'bandgap' to 'target', and 'reduced_formula' to 'formula'
 df.rename(columns={'bandgap': 'target'}, inplace=True)
 df.rename(columns={'reduced_formulas': 'formula'}, inplace=True)
 
