@@ -104,7 +104,7 @@ definitions:
                 - unit: #For example, meters, amperes, or seconds
 ```
 
-## **6. Section and quantities can have annotations**
+**6. Section and quantities can have annotations**
 
  Annotations provide additional information that NOMAD can use to alter its behavior around these definitions and how users can interact with them. Annotations are named blocks of key-value pairs
 
