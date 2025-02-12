@@ -121,14 +121,14 @@ definitions:
           key1: value
           key2: value
 
-        quantities:
-            first_quantity:
-                type: value
-                shape: value
-                unit: value
-                m_annotations:
-                    annotation_name:
-                        key1: value
+      quantities:
+          first_quantity:
+              type: value
+              shape: value
+              unit: value
+              m_annotations:
+                  annotation_name:
+                      key1: value
 ```
 
 
